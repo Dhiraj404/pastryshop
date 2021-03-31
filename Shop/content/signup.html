@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8"/>
+<title> Sign Up </title>
+<link rel="stylesheet" href="CSS/style.css" >
+<script src="Javascript/sign_up.js">
+
+     
+ <script>   
+/* password confirmtion */
+
+    function passwordValidation(){
+	var x = document.form1.Psw.value;
+	var y = document.form1.cpsw.value;
+    alert(x.length);
+    if(x.length<8){
+       document.getElementById("demo").innerHTML="password length its less than 8 !"   
+        return false;
+    } 
+    
+	if(x!=y){
+	document.getElementById("demo").innerHTML="password and confirmed password are not matching!"
+	return false;
+	}
+	return true;
+}  
+  /* ended */   
+     
+ function myFunction(){
+     
+     var x=document.getElementById("id01").value;
+     if(x==""||isNaN(x))
+         {
+             document.getElementById("phondemo").innerHTML="it is not number";
+         }
+     else if(x.length!=11){
+         document.getElementById("phondemo").innerHTML="incorrect phone numberr";
+         return false;
+        
+     }
+     else{
+         document.getElementById("phondemo").innerHTML="correct!";
+          return true; 
+     }
+     
+ }    
+     
+     
+   /* ending phon */
+     
+     /*starting email */
+     
+   function validate_email()
+{
+		var email = document.getElementById("email");
+		var value=email.value;
+		apos=value.indexOf("@");
+		dotpos=value.lastIndexOf(".");
+		if (apos<1||dotpos-apos<2) 
+		  {
+			  document.getElementById("pemail").innerHTML = "incorrect email";
+			  return false;
+		  }
+		else {
+		    document.getElementById("pemail").innerHTML = "correct email";
+			return true;
+		}
+
+}  
+     
+     
+     
+     
+     
+     
+</script>  
+  
+    </style>
+</head> 
+
+<body>
+<div style="margin-left: 45%">
+<form name="cakeform"  action="../pastries.html"  method="post">
+
+ 
+   
+        <div id="singupsection">
+    <h1>Sign Up form</h1>
+   <form name="form1" onsubmit="return validate_email()&& passwordValidation()&& myFunction()" action="action_page.php" method="post">
+    
+  <input type="text" name="Uname"  size="60" placeholder="Your Username" required><br><br>
+<input type="password" name="Psw" size="60" placeholder="Your password" required> <br><br>
+<input type="password"  name="cpsw" size="60" placeholder="confirm password" required> <p id="demo"></p>  
+  
+   <input type="text" id="id01" size="60" placeholder="Your phone number" required>  <p id="phondemo"></p>
+       
+       <br>
+   
+       <p>Enter the date(YYYY-MM-DD):</p>
+	<input type="date" name="name" value="2004-01-14"  required><br><br>
+  
+    <input type="text" id="email" placeholder="Email @google.com" name="email" size="60" required><p id="pemail"></p>
+        
+        <button type="submit" value="submit"><a href="index.html"></a>submit</button>
+        
+		
+		<div class="output" >
+<p id="warning1" style="color:red"></p>
+<p id="warning2" style="color:red"></p>
+<p id="warning3" style="color:red"></p>
+</div>
+</div>
+<p style="margin-left: 35%"> Already have an account? <a href="signin.html">Click here</a> to sign in! </p>
+		
+		</form>
+       
+        </div>
+    
+    
+    </body>
+</html>

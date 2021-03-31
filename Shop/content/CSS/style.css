@@ -1,0 +1,227 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+/* background gradient at top of page, from http://www.colorzilla.com/gradient-editor/ */
+  background: -moz-linear-gradient(top,  #f3d4b7 0%, #f3d4b7 2%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3d4b7),color-stop(2%,#f3d4b7));
+  background: -webkit-linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+  background: -o-linear-gradient(top,  #f3d4b7 0%,#f3d4b7 2%);
+  background: -ms-linear-gradient(top,  #ffa853 0%,#f3d4b7 2%);
+  background: linear-gradient(top,  #ffa853 0%,#ffa853 2%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa853', endColorstr='#ffa853',GradientType=0 );
+  background-repeat: repeat-x;
+  background-color: #ffa853; 
+  background-image: images/wonderlandlogo1.jpg(opacity, 40%);/* Old browsers */
+  margin: 0;
+}
+
+/* link styles */
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+	padding-bottom: .1em;
+}
+a:link {
+    color: #C00;
+  }
+a:visited {
+    color: #921A66;
+  }
+a:focus {
+	color: #921A66;
+}
+a:hover {
+    color: #921A66;
+  }
+a:active {
+	color:#F00;
+}
+
+
+/* styles for the intro section */
+#intro {
+	text-align: center;
+	margin: 2em 0 1em;
+}
+#intro h1 {
+	font-family: Verdana, Sans-serif;
+	margin-bottom: 0;
+	color: brown;
+}
+#intro h2 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #784E35;
+	margin-top: -10px;
+}
+#intro p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	margin: 1em;
+}
+
+
+
+
+/* styles for navigation */
+#nav {
+	background-color: #784e35;
+	overflow: hidden;
+	width: 100%;
+}
+#nav ul {
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+	width: 30em;
+} 
+#nav ul li {
+	float: left;
+	font-weight: normal;
+    text-transform: uppercase;
+}
+#nav ul li a{
+	display: block;
+	padding: .5em;
+	border: 1px solid #fdf9bd;
+	border-radius: .5em;
+	margin: .25em;
+}
+#nav ul a:link {
+    color: #fff;
+  }
+#nav ul a:visited {
+    color: #fff;
+  }
+#nav ul a:focus {
+	color:#FC6
+	border-color: #fff;
+}
+#nav ul a:hover {
+    color: #fc6;
+	border-color: #fff;
+  }
+#nav ul a:active {
+	color:#F00;
+}
+
+/* styles for navigation */
+#nav2 {
+	background-color: #784E35;
+	overflow: hidden;
+	width: 100%;
+}
+#nav2 ul {
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+	width: 99.5%;
+} 
+#nav2 ul li {
+	float: right;
+	font-weight: normal;
+    text-transform: uppercase;
+}
+#nav2 ul li a{
+	display: block;
+	padding: .5em;
+	margin: .25em;
+}
+#nav2 ul a:link {
+    color: #fff;
+  }
+#nav2 ul a:visited {
+    color: #fff;
+  }
+#nav2 ul a:focus {
+	color:#FC6
+}
+#nav2 ul a:hover {
+    color: #fc6;
+  }
+#nav2 ul a:active {
+	color:#F00;
+}	
+/* styles for the products section */
+
+#products {
+  background-color: #FFF;
+  line-height: 1.5em;
+  padding: 1em 2%;
+  border: solid #784E35;
+  margin: 1em 20.5em 1em 1em;
+  clear: both;
+  float: left;
+  width: 60%;
+  }
+
+#products h2 {
+  font-size: 1.2em;
+  color: brown;
+  text-align: center left;
+  text-transform: uppercase;
+  }
+#products h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #784e35;
+  border-top: 1px solid;
+  border-left: 3px solid;
+  padding-left: 1em;
+  margin-top: 2.5em;
+}
+
+#products .more{
+	clear: left;
+}
+
+/* styles for the notice box */
+
+#notice {
+  background: #FFBC53 url(../images/ex-circle-corner.gif) no-repeat left top;
+  color: #784e35;
+  font-size: .875em;
+  line-height: 1.5; 
+  padding: 1em;
+  padding-left: 55px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin: 1em 3% 0 1em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20em;
+  }
+  
+#notice h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #784e35;
+  letter-spacing: 3px;
+  }
+
+
+/* miscellaneous styles */
+  
+em { 
+  color: #F26521;
+  }
+  
+p#copyright {
+  color:#663333; 
+  font-size: .8em;
+  text-align: center;
+  clear: left;
+ }
+
+#award{
+	position: fixed;
+	top: 35px;
+	right: 25px;
+}
+
+#content{
+	position: relative;
+}

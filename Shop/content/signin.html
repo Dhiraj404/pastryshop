@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign In</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CSS/style.css" >
+<script>
+function passwordValidation(){
+	var x = document.cakeform.password.value;
+	var y = document.cakeform.confirmpassword.value;
+	if(x!=y){
+	document.getElementById("demo").innerHTML="password and confirmed password are not matching!"
+	return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<div style="margin-left: 45%">
+<h1>Login</h1>
+<form name="cakeform" onsubmit="return passwordValidation()" action="../pastries.html" method="post">
+	<p>User name:</p>
+	<input type="text" name="username">
+	<p>password:</p>
+	<input type="password" name="password">
+
+	<input type="submit" value="Submit">
+</form>
+<p id="demo"></p>
+	</div>
+<p style="margin-left: 39%"> Don't have account? <a href="signup.html">Click here</a> to sign up!
+
+</body>
+</html>
